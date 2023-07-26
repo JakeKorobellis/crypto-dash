@@ -1,0 +1,1352 @@
+* {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Ubuntu:wght@700&display=swap");
+/** #29263c **/
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: #39434d;
+  padding: 2%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.parent {
+  display: grid;
+  grid-template-columns: 0.17fr 1fr;
+  grid-template-rows: 0.55fr repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background: #171c26; /**#29263c;*/
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.div2 {
+  grid-area: 2 / 1 / 6 / 2;
+  background: #171c26;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  display: flex;
+}
+.div3 {
+  grid-area: 2 / 2 / 6 / 3;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 25px;
+  background: #13181f;
+  padding-left: 2%;
+  overflow: scroll;
+  overflow-x: hidden;
+} /**#211e34;**/
+.header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 2%;
+  color: white;
+  font-weight: 700;
+}
+.icons {
+  height: 2.75vh;
+}
+.profile-icons {
+  width: 12%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  font-size: 2.75vh;
+  font-family: "Ubuntu";
+  width: 27%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 3%;
+}
+.popular-items {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.list-content {
+  display: flex;
+  color: white;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  align-items: center;
+  padding-top: 1.5%;
+}
+.crypto-icons {
+  height: 3.5vh;
+}
+.icon-holder {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-holder {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(208, 206, 206, 0.573);
+}
+.ticker-holder {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-holder {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.high-holder {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.low-holder {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twentyfour-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.all-time-high-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.volume {
+  width: 10%;
+}
+.header-body-list {
+  position: sticky;
+  width: 100%;
+  height: 6vh;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 1.5vh;
+  background: #13181f;
+}
+.one {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.five {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.six {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seven {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+  border-radius: 10px;
+
+  border: 2px solid white;
+}
+.nav-holder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  color: white;
+  font-size: 2vh;
+  font-family: "Ubuntu";
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.active {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Ubuntu";
+  padding-top: 5%;
+}
+.not-active {
+  text-decoration: none;
+  color: rgba(107, 107, 107, 0.74);
+  padding-top: 5%;
+}
+.exchange-data-holder {
+  padding-top: 2%;
+  display: flex;
+  width: 100%;
+  color: white;
+  font-family: "Ubuntu";
+}
+.news-holder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.crypto-news {
+  height: 35%;
+  width: 100%;
+}
+.crypto-news-title {
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+}
+.news-content-holder {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.news-content-holder {
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  height: 100%;
+}
+.parent-crypto {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 95%;
+  height: 50%;
+}
+
+.div1-crypto {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.div2-crypto {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100%;
+}
+.div3-crypto {
+  grid-area: 2 / 2 / 4 / 3;
+  overflow: hidden;
+}
+.div4-crypto {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.crypto-image {
+  height: 15vh;
+}
+.crypto-news-content {
+  width: 50%;
+  padding-top: 2%;
+}
+.news-holder-crypto-two {
+  display: flex;
+  padding-top: 2%;
+  width: 100%;
+  padding-right: 5%;
+  color: white;
+  font-family: "Ubuntu";
+}
+.related-coins {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.individual-related-coins {
+  padding-left: 10%;
+}
+.crypto-news-title-holder-two {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+.crypto-source {
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  color: rgba(128, 128, 128, 0.662);
+}
+.crypto-links {
+  width: 15%;
+}
+.search-keywords-crypto {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+.related-coins {
+  width: 20%;
+}
+.indiviual-keywords {
+  padding-left: 1%;
+}
+.a-crypto {
+  text-decoration: none;
+  border: 1.5px solid grey;
+  padding: 1.75%;
+  border-radius: 5px;
+  color: white;
+  background: #282c34;
+}
+.crypto-news-columns {
+  width: 100%;
+  display: flex;
+  color: white;
+}
+.crypto-news-one {
+  width: 31.25%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 13%;
+}
+.crypto-news-two {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+}
+.crypto-news-three {
+  width: 10%;
+}
+.crypto-news-four {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.crypto-news-five {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 4%;
+}
+.cat-name {
+  width: 20%;
+}
+.cat-mc {
+  width: 20%;
+}
+.cat-mc-change {
+  width: 5%;
+}
+.cat-vol {
+  width: 20%;
+}
+.cat-top-three {
+  width: 11%;
+}
+.cat-img {
+  height: 2.5vh;
+  padding-left: 10%;
+}
+.cat-update {
+  width: 30%;
+}
+.cat-name-collum {
+  width: 15%;
+  padding-right: 4%;
+}
+.cat-mc-collum {
+  width: 20%;
+  padding-left: 2%;
+}
+.cat-mc-change-collum {
+  width: 9%;
+  padding-left: 0.5%;
+}
+.cat-vol-collum {
+  padding-right: 2.5%;
+  width: 20%;
+}
+.cat-top-three-collum {
+  width: 12%;
+  padding-right: 0.5%;
+}
+.cat-update-collum {
+  width: 30%;
+}
+.cat-collums {
+  width: 100%;
+  display: flex;
+  color: white;
+  font-family: "Ubuntu";
+  padding-top: 2%;
+}
+.css-b62m3t-container {
+  width: 90%;
+  padding-left: 2%;
+  color: black;
+}
+.selction-exchange-head {
+  position: sticky;
+  width: 100%;
+  height: 6vh;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-left: 0%;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 1.5vh;
+  background: #13181f;
+  flex-direction: column;
+  padding-top: 0%;
+  height: 1%;
+  padding-bottom: 1%;
+}
+.exchange-title {
+  color: white;
+  font-family: "Ubuntu";
+}
+.exchange-rendered-elemnts {
+  padding-top: 1%;
+}
+.exhcnage-rendered-elements-dyanmic {
+  display: flex;
+  width: 100%;
+  color: white;
+  font-family: "Ubuntu";
+  padding-bottom: 1%;
+  font-size: 2vh;
+  padding-top: 1%;
+}
+.rendered-Exhange-tickers {
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+}
+.rendered-exchange-volume {
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+}
+.rendered-exchange-price {
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+}
+.exchange-rendered-collumns {
+  display: flex;
+  width: 100%;
+  padding-top: 1%;
+}
+.rendered-exchange-title1 {
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+}
+.rendered-exchange-title3 {
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+}
+.rendered-exchange-title2 {
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+}
+.side-bar-holder-crypto {
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+.cyrpto-title-nav {
+  height: 7%;
+
+  color: rgba(255, 255, 255, 0.511);
+  font-size: 3vh;
+}
+.mix-title-nav {
+  height: 1%;
+  padding-bottom: 3%;
+  color: rgba(16, 12, 12, 0.689);
+}
+.logo {
+  height: 3vh;
+  color: #3598e8;
+}
+.title-two {
+  font-size: 2.75vh;
+  padding-top: 1%;
+  flex-direction: column;
+  height: 15%;
+  padding-bottom: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.currimage-holder {
+  width: 5%;
+}
+.curr-currency-holder {
+  display: flex;
+  padding-top: 1%;
+}
+.curr-currency-name {
+  width: 5%;
+  color: white;
+  font-family: "Ubuntu";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curr-currency-rate {
+  display: flex;
+  color: white;
+  font-family: "Ubuntu";
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.multi-holder-curr-img-and-name {
+  display: flex;
+  width: 50%;
+  gap: 5%;
+  justify-content: center;
+}
+.img-curr-rate {
+  height: 4vh;
+}
+.curr-currency-rate-collumns {
+  display: flex;
+  width: 100%;
+}
+.curr-currency-rate-country {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-right: 7%;
+}
+.curr-currency-rate-USD {
+  width: 50%;
+  padding-right: 2.5%;
+  font-size: 2vh;
+}
+.curr-currency-rate-country {
+  width: 50%;
+  font-size: 2vh;
+}
+.curr-title-move {
+  padding-right: 7.25%;
+  font-size: 3vh;
+}
+.custom-coin-search {
+  font-size: 1.5vh;
+}
+.parent-search {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 50vh;
+  width: 50vw;
+}
+
+.div1-search {
+  grid-area: 1 / 1 / 3 / 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.div2-search {
+  grid-area: 1 / 3 / 3 / 5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.div3-search {
+  grid-area: 1 / 5 / 3 / 7;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.div4-search {
+  grid-area: 3 / 1 / 5 / 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.div5-search {
+  grid-area: 3 / 3 / 5 / 5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.div6-search {
+  grid-area: 3 / 5 / 5 / 7;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.render-search-holder {
+  height: 100%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search-titles {
+  font-size: 2vh;
+  color: grey;
+}
+.parent-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1-social {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2-social {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.holder-cpi {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 2.5vh;
+}
+.cpi-adjust {
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding-bottom: 1.5%;
+}
+.cpi-render-hold {
+  display: flex;
+  gap: 30%;
+}
+.date-cpi {
+  width: 10vw;
+}
+.data-cpi {
+  width: 5vw;
+}
+.renderer-date {
+  padding-top: 10%;
+}
+.renderer-data {
+  padding-top: 20%;
+}
+.column-cpi {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: grey;
+}
+.money-supply-header {
+  font-size: 3vh;
+}
+.parent-consumer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.25fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.div1-consumer {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Ubuntu";
+  flex-direction: column;
+  gap: 5%;
+}
+.div2-consumer {
+  grid-area: 1 / 2 / 2 / 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Ubuntu";
+  flex-direction: column;
+  gap: 5%;
+}
+.div3-consumer {
+  grid-area: 1 / 3 / 2 / 4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Ubuntu";
+  flex-direction: column;
+  gap: 5%;
+}
+.div4-consumer {
+  grid-area: 2 / 1 / 3 / 2;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 5%;
+}
+.div5-consumer {
+  grid-area: 2 / 2 / 3 / 3;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 5%;
+}
+.div6-consumer {
+  grid-area: 2 / 3 / 3 / 4;
+  height: 100%;
+  width: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.grid-holder-cpi {
+  height: 68vh;
+  width: 80vw;
+}
+.no-margin-no-padding {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cid-data-render-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu";
+  color: white;
+  padding-top: 2%;
+}
+.cpi-date-render {
+  width: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 4%;
+  padding-top: 4%;
+}
+.cpi-data-render {
+  width: 20vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4%;
+  padding-top: 4%;
+}
+.parent-yield {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.15fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.yield-grid-holder {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20%;
+}
+
+.div1-yield {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100%;
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Ubuntu";
+  gap: 5%;
+}
+.div2-yield {
+  grid-area: 1 / 2 / 2 / 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40%;
+  font-family: "Ubuntu";
+  color: white;
+  width: 70vw;
+}
+.div3-yield {
+  grid-area: 2 / 1 / 3 / 2;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 35vw;
+}
+.div4-yield {
+  grid-area: 2 / 2 / 3 / 3;
+  height: 100%;
+  width: 42vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.parent-consumption {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.3fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 70vh;
+  width: 80vw;
+  background: blue;
+}
+
+.div1-consumption {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: gray;
+}
+.div2-consumption {
+  grid-area: 1 / 2 / 2 / 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: orange;
+}
+.div3-consumption {
+  grid-area: 2 / 1 / 3 / 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: brown;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.div4-consumption {
+  grid-area: 2 / 2 / 3 / 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: greenyellow;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.extra-room-top {
+  padding-top: 2%;
+}
+.charts-econ {
+  padding-top: 2%;
+  height: 90%;
+}
+.search-result-crypto-charts {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.preview-chart-crypto {
+  color: white;
+  font-family: "Ubuntu";
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.img-prev-exchange {
+  height: 2vh;
+}
+.parent-exchange {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1-exchange {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  overflow-y: scroll;
+  margin-top: 5%;
+}
+.div2-exchange {
+  grid-area: 1 / 2 / 2 / 3;
+  overflow-y: scroll;
+  padding-top: 10%;
+  height: 50vh;
+}
+.div3-exchange {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+  height: 100%;
+  height: 57vh;
+}
+.holder-coins-exchange {
+  display: flex;
+  color: white;
+  font-family: "Ubuntu";
+  align-items: center;
+  padding-top: 5%;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.title-coins-exchanges {
+  font-size: 2vh;
+  width: 100%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Ubuntu";
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.span-titles-exchange {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a-exhcange-links {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  background: none;
+  border-radius: 5px;
+  padding: 1%;
+}
+.a-exhcange-links-website {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  background: none;
+  border-radius: 5px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 2vh;
+  font-family: "Ubuntu";
+}
+.parent-exchange-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+}
+
+.div1-exchange-info {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2.5vh;
+  height: 25%;
+}
+.div2-exchange-info {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2.5vh;
+  gap: 5%;
+  justify-content: center;
+  height: 25%;
+}
+.div3-exchange-info {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: center;
+}
+.div4-exchange-info {
+  grid-area: 4 / 1 / 5 / 2;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trustscore-exchange {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2.5vh;
+}
+.trustscore-render {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2.5vh;
+  gap: 10%;
+}
+.volume-chart-exchange {
+  color: white;
+  font-family: "Ubuntu";
+}
+.style-marquee {
+  padding-right: 5%;
+}
+.style-logo-marquee {
+  height: 2.5vh;
+}
+.holder-items-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vw;
+  gap: 5%;
+}
+.image-ticker-marqee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent-coin-search {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 65vh;
+  width: 100%;
+}
+
+.div1-coin-search {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 2%;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2vh;
+}
+.div2-coin-search {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu";
+  color: white;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.div3-coin-search {
+  grid-area: 1 / 4 / 2 / 5;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 1.5vh;
+  justify-content: center;
+  align-items: center;
+}
+.div4-coin-search {
+  grid-area: 2 / 1 / 4 / 3;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  align-items: center;
+}
+.div5-coin-search {
+  grid-area: 2 / 3 / 4 / 5;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu";
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75vh;
+}
+.div6-coin-search {
+  grid-area: 4 / 1 / 6 / 3;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 2%;
+  text-align: left;
+  font-family: "Ubuntu";
+  color: grey;
+  font-size: 1.5vh;
+}
+
+.div7-coin-search {
+  grid-area: 4 / 3 / 6 / 5;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu";
+  color: white;
+}
+.result-render-market-cap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 2vh;
+  gap: 20px;
+  width: 100%;
+}
+.quotes-rendered-search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.title-rendered-search {
+  color: grey;
+}
+a {
+  color: grey;
+}
+.div2-coin-search {
+  font-size: 1.5vh;
+}
+.sentiment-rank-render {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 2vh;
+}
+.gray-title {
+  color: white;
+}
+.rotate-title {
+  color: grey;
+  width: 10vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.rotate-title-dece {
+  width: 10vw;
+  color: grey;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.25%;
+}
+.decen-gap {
+  display: flex;
+  gap: 25px;
+}
+.gray {
+  color: grey;
+}
+.display-flex-deriv {
+  display: flex;
+  height: 10vh;
+}
+.even-deriv {
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu";
+  color: white;
+}
+.mimmick-deriv-render {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu";
+  color: white;
+}
+.padding-left-deriv {
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+}
+.padding-right-deriv {
+  padding-right: 2vw;
+}

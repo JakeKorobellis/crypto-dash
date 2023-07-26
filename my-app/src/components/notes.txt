@@ -1,0 +1,540 @@
+const render =
+    cryptoNews != []
+      ? cryptoNews.map((curr) => {
+          return (
+            <div>
+              <div>{curr.title}</div>
+              <div>{curr.source}</div>
+              <div>{curr.description}</div>
+              <div>
+                <a href={curr.link}>linked</a>
+              </div>
+              <div>
+                {curr.coins.map((currCoin) => {
+                  return <div>{currCoin.coinKeyWords} </div>;
+                })}
+              </div>
+            </div>
+          );
+        })
+      : console.log("loadin");
+
+
+
+
+
+ <div className="news-holder">
+      <div className="crypto-news">
+        <h1 className="crypto-news-title">Latest Crypto News</h1>
+        <div className="news-content-holder">{render}</div>
+      </div>
+    </div>
+
+
+
+
+CPI
+
+         <div className="holder-cpi">
+        <div className="cpi-render-hold">
+          <h5 className="date-cpi">{renderDate}</h5>
+          <h5 className="data-cpi">{renderData}</h5>
+        </div>
+      </div>
+
+
+
+
+       <div className="column-cpi">
+          <div>
+            Recent Increase:{" "}
+            {((cpiData[0] / cpiData[1]) * 100 - 100).toFixed(1)}%
+          </div>
+        </div>
+
+
+
+
+
+        confData.data.dates.reverse().map((curr) => {
+          return (
+            <div key={nanoid()} className="cpi-date-render">
+              {curr}{" "}
+            </div>
+          );
+        })
+      : console.log("loading");
+
+
+
+      confData != ""
+      ? confData.data.values.reverse().map((curr) => {
+          return (
+            <div key={nanoid()} className="cpi-data-render">
+              %{curr.toFixed(1)}
+            </div>
+          );
+        })
+      : console.log("loading");
+
+
+
+      {name: 'Binance', year_established: 2017, country: 'Cayman Islands', description: '', url: 'https://www.binance.com/', …}
+alert_notice
+: 
+""
+centralized
+: 
+true
+country
+: 
+"Cayman Islands"
+description
+: 
+""
+facebook_url
+: 
+"https://www.facebook.com/binanceexchange"
+has_trading_incentive
+: 
+false
+image
+: 
+"https://assets.coingecko.com/markets/images/52/small/binance.jpg?1519353250"
+name
+: 
+"Binance"
+other_url_1
+: 
+"https://medium.com/binanceexchange"
+other_url_2
+: 
+"https://steemit.com/@binanceexchange"
+public_notice
+: 
+""
+reddit_url
+: 
+"https://www.reddit.com/r/binance/"
+slack_url
+: 
+""
+status_updates
+: 
+Array(7)
+0
+: 
+{description: 'Juventus and Paris Saint-Germain Fan Tokens on Bin…\n\r\nClick here➡️ https://ter.li/JUV-and-PSG-tokens', category: 'general', created_at: '2020-12-14T11:18:49.085Z', user: 'Darc', user_title: 'Marketing', …}
+1
+: 
+{description: 'Binance Black Friday - $100,000 in Bitcoin Up For …et started ➡️ https://ter.li/Binance-Black-Friday', category: 'general', created_at: '2020-11-24T09:37:17.816Z', user: 'Darc', user_title: 'Marketing', …}
+2
+: 
+{description: 'Binance Weekly Report: Record BNB Burn at $68M\r\n\r\n… here ➡️ https://ter.li/Binance-Report-October-23', category: 'general', created_at: '2020-10-27T08:40:53.429Z', user: 'Darc', user_title: 'Marketing', …}
+3
+: 
+{description: 'Introducing the Axie Infinity (AXS) Token Sale on …ad\r\n\r\nLearn more ➡️ https://ter.li/AXS-Launchpad-', category: 'general', created_at: '2020-10-26T10:21:09.483Z', user: 'Darc', user_title: 'Marketing', …}
+4
+: 
+{description: 'Binance Weekly Report: Millions in Support of DeFi…\r\n\r\n➡️ https://ter.li/Binance-Weekly-Report-Oct19', category: 'general', created_at: '2020-10-19T09:35:48.597Z', user: 'Darc', user_title: 'Marketing', …}
+5
+: 
+{description: 'Introducing the Injective Protocol (INJ) Token Sal…d\r\n\r\nLearn more ➡️ https://ter.li/INJ--Launchpad ', category: 'general', created_at: '2020-10-12T09:11:29.099Z', user: 'Darc', user_title: 'Marketing', …}
+6
+: 
+{description: 'Binance Weekly Report: Innovate\r\n\r\nRead➡️ https://ter.li/Binance-Weekly-Report-Sep25', category: 'general', created_at: '2020-10-01T09:13:15.236Z', user: 'Darc', user_title: 'Marketing', …}
+length
+: 
+7
+[[Prototype]]
+: 
+Array(0)
+telegram_url
+: 
+""
+tickers
+: 
+Array(100)
+0
+: 
+base
+: 
+"BUSD"
+bid_ask_spread_percentage
+: 
+0.019994
+coin_id
+: 
+"binance-usd"
+converted_last
+: 
+{btc: 0.00006062, eth: 0.00083348, usd: 1.001}
+converted_volume
+: 
+{btc: 42260, eth: 581051, usd: 697767409}
+is_anomaly
+: 
+false
+is_stale
+: 
+false
+last
+: 
+1.0006
+last_fetch_at
+: 
+"2022-11-25T21:51:09+00:00"
+last_traded_at
+: 
+"2022-11-25T21:51:09+00:00"
+market
+: 
+{name: 'Binance', identifier: 'binance', has_trading_incentive: false}
+target
+: 
+"USDT"
+target_coin_id
+: 
+"tether"
+timestamp
+: 
+"2022-11-25T21:51:09+00:00"
+token_info_url
+: 
+null
+trade_url
+: 
+"https://www.binance.com/en/trade/BUSD_USDT?ref=37754157"
+trust_score
+: 
+"green"
+volume
+: 
+697138287.8130122
+[[Prototype]]
+: 
+Object
+1
+: 
+{base: 'BTC', target: 'USDT', market: {…}, last: 16519.19, volume: 183823.51536652027, …}
+2
+: 
+{base: 'WBTC', target: 'BTC', market: {…}, last: 0.9859, volume: 4209.541320022315, …}
+3
+: 
+{base: 'BTC', target: 'BUSD', market: {…}, last: 16509.26, volume: 101277.81680203244, …}
+4
+: 
+{base: 'ETH', target: 'USDT', market: {…}, last: 1199.81, volume: 385451.4043956693, …}
+5
+: 
+{base: 'ETH', target: 'BUSD', market: {…}, last: 1200.18, volume: 226920.91386977205, …}
+6
+: 
+{base: 'USDT', target: 'TRY', market: {…}, last: 19.09, volume: 40215501.67103195, …}
+7
+: 
+{base: 'XRP', target: 'USDT', market: {…}, last: 0.4086, volume: 440792781.91385216, …}
+8
+: 
+{base: 'BNB', target: 'BUSD', market: {…}, last: 300.6, volume: 388553.9451097804, …}
+9
+: 
+{base: 'ETH', target: 'BTC', market: {…}, last: 0.072767, volume: 64566.97752882488, …}
+10
+: 
+{base: 'BUSD', target: 'TRY', market: {…}, last: 19.1, volume: 18157415.113089006, …}
+11
+: 
+{base: 'DOGE', target: 'USDT', market: {…}, last: 0.08878, volume: 2393218023.824172, …}
+12
+: 
+{base: 'BNB', target: 'USDT', market: {…}, last: 300.6, volume: 482476.58893080504, …}
+13
+: 
+{base: 'MATIC', target: 'USDT', market: {…}, last: 0.8427, volume: 52835433.31040703, …}
+14
+: 
+{base: 'LTC', target: 'USDT', market: {…}, last: 74.58, volume: 1547398.5319562885, …}
+15
+: 
+{base: 'USDT', target: 'DAI', market: {…}, last: 0.9996, volume: 1797796.9116946778, …}
+16
+: 
+{base: 'LINK', target: 'USDT', market: {…}, last: 6.85, volume: 5764544.7935664235, …}
+17
+: 
+{base: 'XRP', target: 'BUSD', market: {…}, last: 0.4077, volume: 211047383.01324505, …}
+18
+: 
+{base: 'SOL', target: 'USDT', market: {…}, last: 14.22, volume: 2779012.5890857945, …}
+19
+: 
+{base: 'DOGE', target: 'BUSD', market: {…}, last: 0.08877, volume: 1146319654.9333107, …}
+20
+: 
+{base: 'BTC', target: 'EUR', market: {…}, last: 15860, volume: 2436.6063783176987, …}
+21
+: 
+{base: 'BNB', target: 'BTC', market: {…}, last: 0.018206, volume: 72561.84145336701, …}
+22
+: 
+{base: 'USDT', target: 'BRL', market: {…}, last: 5.425, volume: 12313206.4079447, …}
+23
+: 
+{base: 'USDT', target: 'BIDR', market: {…}, last: 15794, volume: 6671204.377390148, …}
+24
+: 
+{base: 'CHZ', target: 'USDT', market: {…}, last: 0.172, volume: 176435443.41744187, …}
+25
+: 
+{base: 'MATIC', target: 'BUSD', market: {…}, last: 0.8415, volume: 27115035.481794413, …}
+26
+: 
+{base: 'ADA', target: 'USDT', market: {…}, last: 0.3144, volume: 83249682.85858779, …}
+27
+: 
+{base: 'BUSD', target: 'DAI', market: {…}, last: 1, volume: 1562954.66504, …}
+28
+: 
+{base: 'BUSD', target: 'BRL', market: {…}, last: 5.425, volume: 7453679.719686636, …}
+29
+: 
+{base: 'TRX', target: 'USDT', market: {…}, last: 0.05291, volume: 580135820.1351162, …}
+30
+: 
+{base: 'SHIB', target: 'USDT', market: {…}, last: 0.00000917, volume: 4449469279747.99, …}
+31
+: 
+{base: 'SOL', target: 'BUSD', market: {…}, last: 14.17, volume: 2571776.75241355, …}
+32
+: 
+{base: 'BUSD', target: 'BIDR', market: {…}, last: 15799, volume: 4117730.086404203, …}
+33
+: 
+{base: 'ETC', target: 'USDT', market: {…}, last: 20.02, volume: 718167.2374975025, …}
+34
+: 
+{base: 'ATOM', target: 'USDT', market: {…}, last: 10.02, volume: 1173907.5511656688, …}
+35
+: 
+{base: 'APT', target: 'USDT', market: {…}, last: 4.423, volume: 5078993.4174071895, …}
+36
+: 
+{base: 'SNM', target: 'BUSD', market: {…}, last: 0.9139, volume: 142885897.05525768, …}
+37
+: 
+{base: 'LTC', target: 'BUSD', market: {…}, last: 74.62, volume: 425437.6327961672, …}
+38
+: 
+{base: 'DYDX', target: 'USDT', market: {…}, last: 1.805, volume: 11349228.80934626, …}
+39
+: 
+{base: 'LINK', target: 'BUSD', market: {…}, last: 6.852, volume: 2896529.003914186, …}
+40
+: 
+{base: 'ALGO', target: 'USDT', market: {…}, last: 0.2417, volume: 42106441.62267274, …}
+41
+: 
+{base: 'ADA', target: 'BUSD', market: {…}, last: 0.3144, volume: 34593609.395388044, …}
+42
+: 
+{base: 'DOT', target: 'USDT', market: {…}, last: 5.28, volume: 3081562.937935606, …}
+43
+: 
+{base: 'AVAX', target: 'USDT', market: {…}, last: 12.87, volume: 909685.9469386169, …}
+44
+: 
+{base: 'MASK', target: 'USDT', market: {…}, last: 3.019, volume: 15353791.696223915, …}
+45
+: 
+{base: 'XRP', target: 'BTC', market: {…}, last: 0.00002472, volume: 54637027.6670712, …}
+46
+: 
+{base: 'ETH', target: 'EUR', market: {…}, last: 1153.67, volume: 10089.761705010966, …}
+47
+: 
+{base: 'LUNC', target: 'BUSD', market: {…}, last: 0.00015868, volume: 136790517633.09195, …}
+48
+: 
+{base: 'LUNC', target: 'USDT', market: {…}, last: 0.00015851, volume: 48180033918.172356, …}
+49
+: 
+{base: 'BTC', target: 'GBP', market: {…}, last: 13637.99, volume: 401.4981417750856, …}
+50
+: 
+{base: 'DOGE', target: 'BTC', market: {…}, last: 0.00000537, volume: 202631068.11731842, …}
+51
+: 
+{base: 'FIL', target: 'USDT', market: {…}, last: 4.29, volume: 2790678.246759907, …}
+52
+: 
+{base: 'USDT', target: 'RUB', market: {…}, last: 60.02, volume: 2716388.8028990338, …}
+53
+: 
+{base: 'SAND', target: 'USDT', market: {…}, last: 0.5624, volume: 15829057.140291607, …}
+54
+: 
+{base: 'GMT', target: 'USDT', market: {…}, last: 0.3812, volume: 11690007.270802729, …}
+55
+: 
+{base: 'SHIB', target: 'BUSD', market: {…}, last: 0.00000915, volume: 1813900860235.425, …}
+56
+: 
+{base: 'XMR', target: 'USDT', market: {…}, last: 136.6, volume: 78507.12719985358, …}
+57
+: 
+{base: 'CHZ', target: 'BUSD', market: {…}, last: 0.1717, volume: 52173838.80256261, …}
+58
+: 
+{base: 'AAVE', target: 'USDT', market: {…}, last: 59.4, volume: 171374.00526599327, …}
+59
+: 
+{base: 'EOS', target: 'USDT', market: {…}, last: 0.932, volume: 20779330.830042917, …}
+60
+: 
+{base: 'UNI', target: 'USDT', market: {…}, last: 5.44, volume: 1999321.0472242646, …}
+61
+: 
+{base: 'APT', target: 'BUSD', market: {…}, last: 4.4111, volume: 3791249.031254789, …}
+62
+: 
+{base: 'TWT', target: 'USDT', market: {…}, last: 2.0923, volume: 13675666.842183243, …}
+63
+: 
+{base: 'APE', target: 'USDT', market: {…}, last: 3.216, volume: 3803713.9740982587, …}
+64
+: 
+{base: 'AVAX', target: 'BUSD', market: {…}, last: 12.87, volume: 287715.5649184149, …}
+65
+: 
+{base: 'BTC', target: 'BRL', market: {…}, last: 89551, volume: 574.57487084142, …}
+66
+: 
+{base: 'BNX', target: 'USDT', market: {…}, last: 156.8, volume: 60218.990075255104, …}
+67
+: 
+{base: 'LTC', target: 'BTC', market: {…}, last: 0.004515, volume: 217380.32230564783, …}
+68
+: 
+{base: 'OP', target: 'USDT', market: {…}, last: 0.917, volume: 10767487.42959651, …}
+69
+: 
+{base: 'PAXG', target: 'USDT', market: {…}, last: 1751, volume: 765.2507624785836, …}
+70
+: 
+{base: 'MATIC', target: 'BTC', market: {…}, last: 0.000051, volume: 4179725.291764706, …}
+71
+: 
+{base: 'SUSHI', target: 'USDT', market: {…}, last: 1.168, volume: 5596455.522688356, …}
+72
+: 
+{base: 'DOT', target: 'BUSD', market: {…}, last: 5.29, volume: 1178453.6358979207, …}
+73
+: 
+{base: 'APE', target: 'BUSD', market: {…}, last: 3.214, volume: 1819803.2499626633, …}
+74
+: 
+{base: 'PEOPLE', target: 'USDT', market: {…}, last: 0.02396, volume: 365362520.288606, …}
+75
+: 
+{base: 'FTM', target: 'USDT', market: {…}, last: 0.1852, volume: 53243847.96112311, …}
+76
+: 
+{base: 'NEAR', target: 'USDT', market: {…}, last: 1.643, volume: 6741035.914485697, …}
+77
+: 
+{base: 'XLM', target: 'USDT', market: {…}, last: 0.0895, volume: 55139080.57877095, …}
+78
+: 
+{base: 'NEAR', target: 'BUSD', market: {…}, last: 1.641, volume: 2451798.5145033514, …}
+79
+: 
+{base: 'BTC', target: 'DAI', market: {…}, last: 16504.15, volume: 59.99102715909029, …}
+80
+: 
+{base: 'BCH', target: 'USDT', market: {…}, last: 113.3, volume: 55219.586256840244, …}
+81
+: 
+{base: 'GALA', target: 'USDT', market: {…}, last: 0.02502, volume: 287521586.02957636, …}
+82
+: 
+{base: 'ADA', target: 'BTC', market: {…}, last: 0.00001906, volume: 10965649.698321091, …}
+83
+: 
+{base: 'BUSD', target: 'RUB', market: {…}, last: 60.07, volume: 1528255.2493757284, …}
+84
+: 
+{base: 'PAXG', target: 'BUSD', market: {…}, last: 1749, volume: 567.1399256146369, …}
+85
+: 
+{base: 'WAVES', target: 'USDT', market: {…}, last: 2.198, volume: 3010848.108070974, …}
+86
+: 
+{base: 'TRX', target: 'BTC', market: {…}, last: 0.0000032, volume: 29047379.575, …}
+87
+: 
+{base: 'TWT', target: 'BUSD', market: {…}, last: 2.091, volume: 8714367.504878048, …}
+88
+: 
+{base: 'SUSHI', target: 'BUSD', market: {…}, last: 1.166, volume: 1783247.4413379075, …}
+89
+: 
+{base: 'LRC', target: 'USDT', market: {…}, last: 0.2391, volume: 14432674.761187788, …}
+90
+: 
+{base: 'GMT', target: 'BUSD', market: {…}, last: 0.381, volume: 4973232.333989501, …}
+91
+: 
+{base: 'RUNE', target: 'USDT', market: {…}, last: 1.186, volume: 2966577.1275716694, …}
+92
+: 
+{base: 'MANA', target: 'USDT', market: {…}, last: 0.3911, volume: 9920928.435438506, …}
+93
+: 
+{base: 'XMR', target: 'BTC', market: {…}, last: 0.008261, volume: 42381.69111850866, …}
+94
+: 
+{base: 'ICP', target: 'USDT', market: {…}, last: 3.897, volume: 815538.6571567872, …}
+95
+: 
+{base: 'FLOW', target: 'USDT', market: {…}, last: 1.116, volume: 3790939.562983871, …}
+96
+: 
+{base: 'BTC', target: 'AUD', market: {…}, last: 24508.41, volume: 288.5414277338554, …}
+97
+: 
+{base: 'SOL', target: 'BTC', market: {…}, last: 0.0008592, volume: 364674.6651187151, …}
+98
+: 
+{base: 'CRV', target: 'USDT', market: {…}, last: 0.677, volume: 24354535.889217135, …}
+99
+: 
+{base: 'TRX', target: 'BUSD', market: {…}, last: 0.05284, volume: 113629059.53075321, …}
+length
+: 
+100
+[[Prototype]]
+: 
+Array(0)
+trade_volume_24h_btc
+: 
+596482.2162983486
+trade_volume_24h_btc_normalized
+: 
+302932.4113905047
+trust_score
+: 
+10
+trust_score_rank
+: 
+1
+twitter_handle
+: 
+"binance"
+url
+: 
+"https://www.binance.com/"
+year_established
+: 
+2017
