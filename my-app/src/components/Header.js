@@ -65,9 +65,9 @@ export default function Header(props) {
               <div className="image-ticker-marqee">
                 {" "}
                 <img src={curr.item.small} className="style-logo-marquee" />
-                {curr.item.symbol}
+                {width2 > 500 ? curr.item.symbol : <span />}
               </div>{" "}
-              <div>{curr.item.name}</div>
+              <div>{width2 > 500 ? curr.item.name : <div />}</div>
             </div>
           );
         })

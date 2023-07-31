@@ -303,9 +303,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 4vh;
 }
 .crypto-news {
-  height: 35%;
+  height: 100%;
   width: 100%;
 }
 .crypto-news-title {
@@ -1190,7 +1191,7 @@
   align-items: center;
   justify-content: center;
   width: 13vw;
-  gap: 5%;
+  gap: 10%;
 }
 .image-ticker-marqee {
   display: flex;
@@ -1360,4 +1361,11 @@ a {
 }
 .padding-right-deriv {
   padding-right: 2vw;
+}
+.white{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 10vh;
 }

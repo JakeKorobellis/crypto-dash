@@ -16,10 +16,10 @@ export default function Nav(props) {
       <CustomLink to="/crypto-charts">Charts</CustomLink>
 
       <div className="cyrpto-title-nav">Economy</div>
-      <CustomLink to="/money-supply">Money Supply</CustomLink>
-      <CustomLink to="/consumer">Consumer</CustomLink>
-      <CustomLink to="/yield">Yield</CustomLink>
-      <CustomLink to="/econ-charts">Charts</CustomLink>
+      <CustomLink to="/construction">Money Supply</CustomLink>
+      <CustomLink to="/construction">Consumer</CustomLink>
+      <CustomLink to="/construction">Yield</CustomLink>
+      <CustomLink to="/construction">Charts</CustomLink>
 
       <div className="cyrpto-title-nav">Both</div>
 

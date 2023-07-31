@@ -15,6 +15,7 @@ import Yield from "./components/Yield";
 import ChartsEcon from "./components/ChartsEcon";
 import Exchanges from "./components/Exchanges";
 import Derivatives from "./components/Derivatives";
+import Constrcution from "./components/constrcution";
 
 function App() {
   const screen = window.screen; // or const { width } = window.screen;
@@ -61,6 +62,7 @@ function App() {
             <Route path="/econ-charts" element={<ChartsEcon />} />
             <Route path="/exchange-data" element={<Exchanges />} />
             <Route path="/derivatives" element={<Derivatives />} />
+            <Route path="/construction" element={<Constrcution />} />
           </Routes>
         </div>
       </div>
