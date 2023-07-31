@@ -1,5 +1,4 @@
 import React from "react";
-import ReactMde from "react-mde";
 
 export default function CurrencyRates(props) {
   //Currency Rates

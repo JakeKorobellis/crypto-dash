@@ -7,6 +7,8 @@ import Marquee from "react-fast-marquee";
 import parse from "html-react-parser";
 
 export default function Header(props) {
+  const screen = window.screen; // or const { width } = window.screen;
+  const width2 = screen.width;
   const [trending, setTrending] = React.useState("");
   const [decentral, setDecentral] = React.useState("");
   const [global, setGlobal] = React.useState("");
@@ -71,6 +73,14 @@ export default function Header(props) {
         })
       : console.log("loading");
 
+  const widthDetermine = (width) => {
+    if (width > 500) {
+      return "60vw";
+    } else {
+      return "150vw";
+    }
+  };
+
   return (
     <div className="header">
       <div className="title">
@@ -80,8 +90,8 @@ export default function Header(props) {
       <div className="style-marquee">
         <Marquee
           style={{
-            width: "60vw",
-            height: "5vh",
+            width: widthDetermine(width2),
+            height: "30vh",
           }}
           gradient={false}
           speed={20}

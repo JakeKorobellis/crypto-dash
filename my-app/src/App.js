@@ -17,6 +17,8 @@ import Exchanges from "./components/Exchanges";
 import Derivatives from "./components/Derivatives";
 
 function App() {
+  const screen = window.screen; // or const { width } = window.screen;
+  const width = screen.width;
   //5 most pop state
   const [fiveMost, setFiveMost] = React.useState(null);
   //Body List state
@@ -37,7 +39,7 @@ function App() {
       .then((res3) => setBodyList(res3));
   }, []);
   return (
-    <div className="App">
+    <div className={width > 500 ? "App" : "app-phone"}>
       <div className="parent">
         <div className="div1">
           <Header />{" "}
